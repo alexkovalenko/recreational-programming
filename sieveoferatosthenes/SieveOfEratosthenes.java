@@ -1,5 +1,3 @@
-package com.github.alexkovalenko.sieveoferatosthenes;
-
 import java.util.ArrayList;
 import java.util.List;
 

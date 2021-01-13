@@ -1,5 +1,3 @@
-package com.github.alexkovalenko.sierpinski;
-
 import javax.swing.*;
 import java.awt.*;
 
