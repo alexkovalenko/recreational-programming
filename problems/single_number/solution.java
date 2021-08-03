@@ -1,21 +1,19 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        Set<Integer> numsWithDuplicates = new HashSet();
-        for(int i=0; i < nums.length; i++) {
-            for(int j=i+1; j < nums.length; j++) {
-                if(nums[i] == nums[j]) {
-                    numsWithDuplicates.add(nums[i]);
-                    break;
-                }
+        /*Arrays.sort(n);
+        for (int i = 0; i < n.length - 1; i++) {
+            if (i == 0 && n[i] != n[i + 1]) {
+                return n[i];
+            }    
+            if (i > 0 && n[i] != n[i - 1] && n[i] != n[i + 1]) {
+                return n[i];
             }
         }
-        System.out.println(numsWithDuplicates);
-        for(int i=0; i < nums.length; i++) {
-            if(!numsWithDuplicates.contains(nums[i])) {
-                return nums[i];
-            }
+        return n[n.length - 1];*/
+        int mask = 0;
+        for(int n : nums) {
+            mask ^= n;
         }
-        return -1;
+        return mask;
     }
-    
 }
