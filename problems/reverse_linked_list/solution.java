@@ -17,5 +17,25 @@ class Solution {
         head.next.next = head;
         head.next = null;
         return node;
+//         if (head == null) {
+//             return null;
+//         }
+        
+//         Deque<ListNode> stack = new ArrayDeque<>();
+//         while (head != null) {
+//             stack.push(head);
+//             head = head.next;
+//         }
+        
+//         ListNode first = head = stack.pop();
+//         while(!stack.isEmpty()) {
+//             ListNode next = stack.pop();
+//             head.next = next;
+//             head = next;
+//         }
+        
+//         head.next = null;
+        
+//         return first;
     }
 }
