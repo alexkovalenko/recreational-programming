@@ -9,14 +9,14 @@
  * }
  */
 class Solution {
-    public ListNode removeElements(ListNode head, int val) {
-        var sentinel = new ListNode(0, head);
-        var current = sentinel;
-        while(current.next != null) {
-            if (current.next.val == val) {
-                current.next = current.next.next;
+ public static ListNode removeElements(ListNode head, int val) {
+        ListNode sentinel = new ListNode(0, head);
+        ListNode cur = sentinel;
+        while (cur.next != null) {
+            if (cur.next.val == val) {
+                cur.next = cur.next.next;
             } else {
-                current = current.next;
+                cur = cur.next;
             }
         }
         return sentinel.next;
