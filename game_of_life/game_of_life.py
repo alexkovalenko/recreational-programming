@@ -2,7 +2,7 @@ import turtle
 import random
 import time
 
-n = 150
+n = 50 
 s = turtle.getscreen()
 turtle.setup(1000,1000)
 turtle.title("Game of life")
