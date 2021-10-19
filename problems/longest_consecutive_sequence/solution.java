@@ -17,7 +17,7 @@ class Solution {
             } else {
                 cur = 1;
             }
-                max = Math.max(max, cur);
+            max = Math.max(max, cur);
         }
         return max;
     }
